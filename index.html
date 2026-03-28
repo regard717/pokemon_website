@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Center Explorer</title>
+    <meta
+      name="description"
+      content="點擊地圖上的 Pokemon Center logo，探索 MEGA TOKYO 的店鋪資訊、交通方式與限定商品。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="home-page">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">Pokemon Center Explorer</a>
+        <nav class="site-nav">
+          <a href="./center-mega-tokyo.html">MEGA TOKYO</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Interactive Store Map</p>
+            <h1>點擊地圖上的 Logo，直接進入該寶可夢中心的專屬介紹頁</h1>
+            <p class="hero-text">
+              這個版本先完成「Pokémon Center MEGA TOKYO」點位。你可以從地圖上的 logo
+              進入店鋪頁，查看介紹文、營業時間、地址、Google 地圖與限定商品展示。
+            </p>
+            <a class="primary-link" href="./center-mega-tokyo.html">直接查看 MEGA TOKYO</a>
+          </div>
+
+          <div class="hero-map-card">
+            <div class="map-legend">
+              <span class="legend-dot"></span>
+              <span>可點擊店鋪</span>
+            </div>
+
+            <div class="map-stage" aria-label="Pokemon Center map">
+              <div class="map-grid"></div>
+              <div class="map-island island-one"></div>
+              <div class="map-island island-two"></div>
+              <div class="map-island island-three"></div>
+
+              <a
+                class="map-logo hotspot-mega"
+                href="./center-mega-tokyo.html"
+                aria-label="前往 Pokemon Center MEGA TOKYO 介紹頁"
+              >
+                <span class="logo-badge">M</span>
+                <span class="logo-copy">
+                  <strong>MEGA TOKYO</strong>
+                  <small>Sunshine City</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="preview-strip">
+          <article class="preview-card">
+            <p class="card-label">Store Highlight</p>
+            <h2>Pokémon Center MEGA TOKYO</h2>
+            <p>
+              東京人氣最高的寶可夢中心之一，位在 Sunshine City，店內結合大型周邊販售、
+              Pokémon GO Lab. 與 Pikachu Sweets。
+            </p>
+          </article>
+
+          <article class="preview-card accent-card">
+            <p class="card-label">What’s Inside</p>
+            <ul class="feature-list">
+              <li>店鋪介紹文</li>
+              <li>營業時間與地址</li>
+              <li>Google 地圖嵌入</li>
+              <li>限定商品陳列區</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
